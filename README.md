@@ -39,4 +39,36 @@ This is a Spring Boot application (`jwt` artifact) designed to showcase how to i
     cd jwt
     ```
 2.  **Configure Database:**
-    * Open `src/main/resources/
+    * Open `src/main/resources/application.properties` (or `application.yml`).
+    * Configure your MySQL database connection details (URL, username, password).
+        ```properties
+        spring.datasource.url=jdbc:mysql://localhost:3306/your_database_name?useSSL=false&serverTimezone=UTC
+        spring.datasource.username=your_username
+        spring.datasource.password=your_password
+        spring.jpa.hibernate.ddl-auto=update # or create, none
+        spring.jpa.show-sql=true
+        ```
+3.  **Build the project:**
+    ```bash
+    mvn clean install
+    ```
+4.  **Run the application:**
+    ```bash
+    mvn spring-boot:run
+    ```
+    The application should start on port 8080 by default.
+
+## Usage
+
+This project is a demo. Typically, you would:
+
+1.  **Register/Login:** Make a POST request to an authentication endpoint (e.g., `/api/auth/signin` or `/api/auth/signup`) to get a JWT token.
+2.  **Access Protected Resources:** Include the obtained JWT in the `Authorization` header of subsequent requests to protected endpoints (e.g., `Authorization: Bearer <YOUR_JWT_TOKEN>`).
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit pull requests.
+
+## License
+
+This project currently has a placeholder license configuration in `pom.xml`. Please add an appropriate open-source license file (e.g., MIT, Apache 2.0) to the root of the project to specify terms of use for others.
