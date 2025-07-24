@@ -6,9 +6,11 @@ This project is a demonstration of implementing JWT (JSON Web Token) authenticat
 
 This is a Spring Boot application (`jwt` artifact) designed to showcase how to integrate JWT for secure authentication and authorization. It utilizes Spring Security for core security functionalities and JJWT for JWT specific operations.
 
+The project is configured with a `MIT License` and includes a placeholder for developer information.
+
 ## Technologies Used
 
-* **Spring Boot:** 3.5.3
+* **Spring Boot Version:** 3.5.3
 * **Java Version:** 17
 * **Build Tool:** Maven
 
@@ -71,4 +73,4 @@ Contributions are welcome! Please fork the repository and submit pull requests.
 
 ## License
 
-This project currently has a placeholder license configuration in `pom.xml`. Please add an appropriate open-source license file (e.g., MIT, Apache 2.0) to the root of the project to specify terms of use for others.
+This project is licensed under the MIT License. You can find the full text of the license here: [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT).
